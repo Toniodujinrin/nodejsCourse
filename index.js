@@ -46,7 +46,8 @@ httpsServer.listen(3005, () => {
 const routes = {
   ping: handlers.ping,
   users: handlers.users,
-  tokens:handlers.tokens
+  tokens: handlers.tokens,
+  checks: handlers.checks,
 };
 
 const unifiedServer = function (req, res) {
